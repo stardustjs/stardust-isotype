@@ -1,6 +1,6 @@
 /// <reference path="./earcut.d.ts" />
 
-import { Specification, shape } from "stardust-core";
+import { Specification, mark } from "stardust-core";
 import * as earcut from "earcut";
 
 interface ParsedTriangle {
@@ -68,8 +68,8 @@ function parseSVGTriangles(svg: string): ParsedTriangles {
     };
 }
 
-export function isotype(svg: string): Specification.Shape {
-    let custom = shape.custom();
+export function isotype(svg: string): Specification.Mark {
+    let custom = mark.custom();
 
     custom.input("position", "Vector2", "[ 0, 0 ]");
     custom.input("size", "float", "1");
