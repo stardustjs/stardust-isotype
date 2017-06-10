@@ -23,7 +23,7 @@
     "watch": "tsc -w -p src"
   },
   "dependencies": {
-    "stardust-core": "0.1.0"
+    "stardust-core": "^0.1.0"
   },
   "devDependencies": {
     "earcut": "^2.1.1",
