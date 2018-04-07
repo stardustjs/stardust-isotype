@@ -1,7 +1,8 @@
-/// <reference path="./earcut.d.ts" />
-
 import { Specification, mark } from "stardust-core";
-import * as earcut from "earcut";
+
+declare function require(name: "earcut"): (points: number[]) => number[];
+
+let earcut = require("earcut");
 
 interface ParsedTriangle {
     p1: number[];
